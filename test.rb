@@ -8,5 +8,5 @@ codemaker.generate_code
 puts codemaker.code.join('')
 
 codebreaker = CodeBreaker.new
-codebreaker.guess_code
+codebreaker.generate_code
 puts codebreaker.code.join('')

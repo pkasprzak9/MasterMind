@@ -3,7 +3,7 @@
 class CodeBreaker
   attr_reader :code
 
-  def guess_code
+  def generate_code
     @code = []
     puts 'Enter 4 digits'
     4.times do
