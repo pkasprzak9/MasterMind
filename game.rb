@@ -21,6 +21,7 @@ class Game
       play_round
       @count_rounds += 1
     end
+    puts(@game_over ? 'You win!' : 'You lose!')
   end
 
   private
