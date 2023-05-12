@@ -1,5 +1,7 @@
 # frozen_string_literal: false
 
+require 'pry-byebug'
+
 # The Game class initializes with four instance variables: @code_maker,
 # @code_breaker,  @game_over and @count_rounds.
 class Game
@@ -32,5 +34,23 @@ class Game
     @codebreaker.generate_code
     @game_over = @codemaker.code == @codebreaker.code
     return if @game_over
+
+    compare_codes
+  end
+
+  def compare_codes
+    correct_place = 0
+    incorrect_place = 0
+    @codemaker.code.each_with_index do |num, index|
+      if num == @codebreaker.code[index]
+        correct_place += 1
+        @codebreaker.code[index] = ''
+      elsif @codebreaker.code.include?(num)
+        incorrect_place += 1
+        temp = @codebreaker.code.index(num)
+        @codebreaker.code[temp] = ''
+      end
+    end
+    puts "Correct places: #{correct_place}\nIncorrect places: #{incorrect_place}"
   end
 end
