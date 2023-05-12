@@ -21,7 +21,16 @@ class Game
   private
 
   def play_round(codemaker, codebreaker)
+    correct_number = 0
+    # correct_number_and_place = 0
+
     codebreaker.generate_code
     @game_over = codemaker.code == codebreaker.code
+    return if @game_over
+
+    codebreaker.code.each do |num|
+      correct_number += 1 if codemaker.code.include?(num)
+    end
+    puts "Correct numbers: #{correct_number}"
   end
 end
