@@ -32,28 +32,5 @@ class Game
     @codebreaker.generate_code
     @game_over = @codemaker.code == @codebreaker.code
     return if @game_over
-
-    keep_track
-  end
-
-  # The keep_track method checks for correct guesses and prints the appropriate
-  # message using the print_correct_guesses method.
-  def keep_track
-    correct_number = 0
-    @codebreaker.code.each do |num|
-      correct_number += 1 if @codemaker.code.include?(num)
-    end
-    print_correct_guesses(correct_number)
-  end
-
-  def print_correct_guesses(num)
-    case num
-    when 0
-      puts "There isn't any correct number in your guess."
-    when 1
-      puts "There is #{num} correct number in your guess!"
-    else
-      puts "There are #{num} correct numbers in your guess!"
-    end
   end
 end
