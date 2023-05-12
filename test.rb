@@ -7,5 +7,5 @@ require './game'
 codemaker = CodeMaker.new
 codebreaker = CodeBreaker.new
 
-game = Game.new
-puts(game.play_game(codemaker, codebreaker))
+game = Game.new(codemaker, codebreaker)
+game.play_game
