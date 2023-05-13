@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-class CodeMaker
+class Computer
   attr_reader :code
 
   # This method generates a 4-digit code consisting of random numbers between 0

@@ -1,11 +1,11 @@
 # frozen_string_literal: false
 
-require './codemaker'
-require './codebreaker'
+require './computer'
+require './player'
 require './game'
 
-codemaker = CodeMaker.new
-codebreaker = CodeBreaker.new
+computer = Computer.new
+player = Player.new
 
-game = Game.new(codemaker, codebreaker)
+game = Game.new(computer, player)
 game.play_game

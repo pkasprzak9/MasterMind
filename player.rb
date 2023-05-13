@@ -1,6 +1,6 @@
 # frozen_string_literal: false
 
-class CodeBreaker
+class Player
   attr_reader :code
 
   # The generate_code method prompts the user to enter four digits, reads and
