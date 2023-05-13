@@ -8,4 +8,4 @@ computer = Computer.new
 player = Player.new
 
 game = Game.new(computer, player)
-game.play_game
+game.start_game
