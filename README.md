@@ -52,7 +52,13 @@ Feel free to contribute to the repository by tackling any of the items on the to
 5. Follow the on-screen instructions to play the game.
 6. Choose whether you want to guess the secret code or make the secret code.
 7. If you choose to guess, enter your guesses when prompted.
-8. If you choose to make
+8. If you choose to makethe secret code, enter your code when prompted.
+9. The game will provide feedback on the correctness of your guesses.
+10. The game ends when you win (guess correctly) or lose (exceed the maximum number of rounds).
+
+Enjoy playing Mastermind!
+
+Note: The code is designed to run in a terminal/command prompt environment.
 
 ## Contributors
 https://github.com/pkasprzak9
