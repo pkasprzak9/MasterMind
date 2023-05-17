@@ -40,7 +40,6 @@ The `Player` class represents the player in the game. It allows the player to ge
 -  Add unit tests to ensure the correctness of the implemented classes and methods.
 -  Implement a user-friendly command-line interface with clear instructions and error handling.
 -  Consider adding additional game modes or difficulty levels to provide more gameplay options.
--  Update the README file with detailed instructions on how to use and customize the game.
 
 Feel free to contribute to the repository by tackling any of the items on the to-do list. Pull requests are welcome!
 
